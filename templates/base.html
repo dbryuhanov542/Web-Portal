@@ -1,39 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <title>Document</title>
-</head>
-<body>
-    <div class="new-header">
-        <div class="head-wrapper">
-            <div class="nav">
-                <ul class="menu">
-                    <li><img src="../static/logo-ngc.png" alt="logo"></li>
-                    <li><a class="menu-item" href="">Главная</a></li>
-                    <li><a class="menu-item" href="">123123</a></li>
-                    <li><a class="menu-item" href="">123123</a></li>
-                </ul>
-            </div>
-            <div class="name">
-
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../static/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="header">
+            <div class="header-wrapper">
+                <div class="nav-line">
+                    <div class="img-container">
+                        <img class="logo" src="../static/mini-logo.png" alt="logo">
+                    </div>
+                    <div class="menu-container">
+                        <ul class="menu-ul">
+                            <li class="menu-item">Главная</li>
+                            <div class="divider"></div>
+                            <li class="menu-item">Прх</li>
+                            <div class="divider"></div>
+                            <li class="menu-item">Прх</li>
+                            <div class="divider"></div>
+                            <li class="menu-item">Прх</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="name">
+                    <span>NGC
+                        <br>Clinic
+                    </span>
+                </div>
             </div>
         </div>
-    </div>
-    {% block events %}
-        
-    {% endblock events %}
+        {% block events %}
+        <div class="content-wrapper">
+            <div class="content">
+                <div class="left-panel">
+
+                </div>
+                <div class="right-panel">
+                    
+                </div>
+            </div>
+        </div>
+        {% endblock events %}
     
-    {% block body %}
+        {% block body %}
         
-    {% endblock body %}
-</body>
+        {% endblock body %}
+    </body>
 </html>
